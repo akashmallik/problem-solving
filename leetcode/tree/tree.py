@@ -9,7 +9,7 @@ class TreeNode:
 
 
 def tree(values: list, root_index: int) -> Optional[TreeNode]:
-    if root_index >= len(values):
+    if not values or root_index >= len(values):
         return None
 
     root = TreeNode(values[root_index])
